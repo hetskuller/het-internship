@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> gandhi'S - 😋 </title>
+  <title>gandhi'S Cafe - 😋</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #fff8f0;
     }
 
@@ -26,9 +30,9 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      font-weight: bold;
-      font-style: italic;
-      font-size: 1.5rem;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+      margin: 0;
     }
 
     .hamburger {
@@ -76,6 +80,11 @@
       padding: 30px 15px;
     }
 
+    header h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+    }
+
     .hero {
       text-align: center;
       margin: 30px 15px;
@@ -100,7 +109,7 @@
       <span></span>
       <span></span>
     </div>
-    <div class="brand"> gandhi'S</div>
+    <h1 class="brand">gandhi'S Cafe</h1>
   </div>
 
   <nav>
@@ -111,7 +120,7 @@
   </nav>
 
   <header>
-    <h1>Welcome to gandhi'S</h1>
+    <h2>Welcome to gandhi'S Cafe</h2>
     <p>Your favorite stop for fast food and hearty dinner meals.</p>
   </header>
 
@@ -121,7 +130,6 @@
   </section>
 
   <script>
-    // Optional: Close menu when clicking a link
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(link => {
       link.addEventListener('click', () => {
