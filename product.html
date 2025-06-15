@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gandhi'S Cafe - Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff8f0;
+      padding-bottom: 40px;
+    }
+
+    .topbar {
+      background-color: #6b4f3b;
+      color: white;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .brand {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.8rem;
+    }
+
+    header {
+      text-align: center;
+      background-color: #f4e4d0;
+      padding: 30px 15px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    .menu-category {
+      margin: 30px 20px;
+    }
+
+    .menu-category h3 {
+      color: #6b4f3b;
+      border-bottom: 2px solid #6b4f3b;
+      padding-bottom: 8px;
+    }
+
+    .menu-item {
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .menu-item span {
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <h1 class="brand">gandhi'S Cafe</h1>
+  </div>
+
+  <header>
+    <h2>Our All-Veg Menu</h2>
+    <p>Explore our handpicked vegetarian meals across four delicious categories.</p>
+  </header>
+
+  <section class="menu-category">
+    <h3>🍔 Fast Food</h3>
+    <div class="menu-item"><span>Veg Burger</span><span>₹80</span></div>
+    <div class="menu-item"><span>Paneer Wrap</span><span>₹120</span></div>
+    <div class="menu-item"><span>Cheese Sandwich</span><span>₹70</span></div>
+    <div class="menu-item"><span>Veg Momos</span><span>₹90</span></div>
+    <div class="menu-item"><span>Masala Fries</span><span>₹60</span></div>
+  </section>
+
+  <section class="menu-category">
+    <h3>🍕 Italian Bites</h3>
+    <div class="menu-item"><span>Margherita Pizza</span><span>₹200</span></div>
+    <div class="menu-item"><span>Veggie Supreme Pizza</span><span>₹250</span></div>
+    <div class="menu-item"><span>White Sauce Pasta</span><span>₹180</span></div>
+    <div class="menu-item"><span>Red Sauce Pasta</span><span>₹160</span></div>
+    <div class="menu-item"><span>Garlic Bread</span><span>₹90</span></div>
+  </section>
+
+  <section class="menu-category">
+    <h3>🍽️ Dinner Specials</h3>
+    <div class="menu-item"><span>Paneer Butter Masala</span><span>₹190</span></div>
+    <div class="menu-item"><span>Dal Makhani</span><span>₹140</span></div>
+    <div class="menu-item"><span>Veg Biryani</span><span>₹160</span></div>
+    <div class="menu-item"><span>Stuffed Paratha Platter</span><span>₹130</span></div>
+    <div class="menu-item"><span>Shahi Paneer</span><span>₹190</span></div>
+  </section>
+
+  <section class="menu-category">
+    <h3>🥤 Beverages</h3>
+    <div class="menu-item"><span>Cold Coffee</span><span>₹90</span></div>
+    <div class="menu-item"><span>Mango Smoothie</span><span>₹100</span></div>
+    <div class="menu-item"><span>Lemon Soda</span><span>₹50</span></div>
+    <div class="menu-item"><span>Masala Chai</span><span>₹30</span></div>
+    <div class="menu-item"><span>Chocolate Shake</span><span>₹110</span></div>
+  </section>
+
+</body>
+</html>
