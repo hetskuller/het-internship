@@ -17,22 +17,62 @@
       padding: 0;
     }
 
+    .topbar {
+      background-color: #6b4f3b;
+      color: white;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: white;
+      margin: 4px 0;
+    }
+
     nav {
       background-color: #6b4f3b;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav.active {
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px 0;
     }
 
     nav a {
       color: white;
       text-decoration: none;
+      padding: 12px;
       font-weight: bold;
+      display: block;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #5a3e2e;
+      width: 100%;
+      text-align: center;
     }
 
     header {
@@ -57,6 +97,15 @@
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1 class="brand">gandhi'S</h1>
+  </div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -69,14 +118,23 @@
   </header>
 
   <section>
-    <p>GaNDhI'S was founded with a passion to serve people across all age groups with fast, flavorful, and satisfying food. From café snacks to full dinner meals, we bring comfort and taste in every bite.</p>
+    <p>gandhi'S was founded with a passion to serve people across all age groups with fast, flavorful, and satisfying food. From café snacks to full dinner meals, we bring comfort and taste in every bite.</p>
 
     <p>
       ✨ The most loved and visited café in town.<br>
       ☕ Where every sip and bite feels like home.<br>
       🍽️ Blending tradition and taste under one cozy roof.<br>
-      🌟 GaNDhI'S — redefining vegetarian dining experiences.
+      🌟 gandhi'S — redefining vegetarian dining experiences.
     </p>
   </section>
+
+  <script>
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('nav').classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
